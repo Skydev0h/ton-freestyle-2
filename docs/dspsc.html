@@ -80,6 +80,38 @@
                 contract in different ways with help of internal messages.</p>
         </div>
     </div>
+    <hr class="bg-darkViolet"/>
+    <div class="py-10 px-0 px-5-sm px-10-md px-20-lg text-leader wtxsh">
+        <ul class="custom-list-marker">
+            <li data-marker="➤">Data is stored into separate boxes with many features for each one:</li>
+            <li data-marker="★" class="mt-5">Box ownership control: each box can have its own owner</li>
+            <li data-marker="→">An owner can be a person (wallet) or some complex smart contract</li>
+            <li data-marker="→">Complex smart contract can programmatically change box contents</li>
+            <li data-marker="→">Box can even be protected from contract owner, if neccessary</li>
+            <li data-marker="→">If box is not protected contract owner can manipulate it too</li>
+            <li data-marker="★" class="mt-5">Programmatic access control with different options</li>
+            <li data-marker="→">Data can be accessed manually with a free getter method by some client</li>
+            <li data-marker="→">Inside the blockchain data can be returned as a response to specific message</li>
+            <li data-marker="→">Last, but not least, data can be injected into a proxied (forwarded) message</li>
+            <li data-marker="→">Each of those options can be allowed or forbidden per each specific box</li>
+            <li data-marker="★" class="mt-5">It is possible to willingly protect the box from contract owner</li>
+            <li data-marker="→">This provides some safety guarantees and autonomy for the box owner</li>
+            <li data-marker="→">Contract owner would not be able to impair box options or alter contents</li>
+            <li data-marker="→">It is possible to forcefully unlock the box if its owner disappears for long time</li>
+            <li data-marker="★" class="mt-5">Box can be frozen to prevent any accidental modification</li>
+            <li data-marker="→">It is not possible to do absolutely anything with box when it is frozen</li>
+            <li data-marker="→">The only allowed operation is explicitly thawing the box</li>
+            <li data-marker="→">This action is similar to chattr +i in linux world.</li>
+            <li data-marker="★" class="mt-5">Box can have some quota restrictions (cells and bits)</li>
+            <li data-marker="→">This prevents box users from inadequately using contract resources</li>
+            <li data-marker="→">When box is protected decreasing limits is not possible</li>
+            <li data-marker="→">The limit affects any future changes but not current data of the box</li>
+            <li data-marker="➤" class="mt-10">Good code base and extensibility</li>
+            <li data-marker="★" class="mt-2">The code is well written and can be easily read and extended</li>
+            <li data-marker="★" class="mt-2">Extending the code can provide more features, for example</li>
+            <li data-marker="→">Adding a dnsresolve function will turn this into hybrid DNS resolver</li>
+        </ul>
+    </div>
 </div>
 </div>
 <div>
@@ -110,7 +142,7 @@
             </div>
             <div class="cell-sm-6 py-15">
                 <img src="img/assets/dns.png" alt="Hybrid DNS" class="smimg" /><br/>
-                <p class="text-leader sz2 fg-white">Hybrid DNS contract</p>
+                <p class="text-leader sz2 fg-white">Hybrid DNS resolver</p>
                 <p class="text-leader2">By extending the contract with a little DNS resolving function it is possible
                     to use the contract as a hybrid DNS service with per-domain owners and manual controlling.</p>
             </div>

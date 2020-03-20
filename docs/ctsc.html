@@ -57,7 +57,7 @@
 <div style='background: url("img/white1.jpg"); background-size: cover'> <!-- class="parallax-window" data-parallax="scroll" data-image-src="img/white1.jpg" -->
     <a id="features"></a>
     <div class="display3 my-0 pt-10 text-center fg-black wtxsh">Features</div>
-    <div class="row px-5 text-center">
+    <div class="row px-5 text-center wtxsh">
         <div class="cell-sm-4 py-15">
             <img src="img/assets/decsec2.png" alt="Decentralized security" class="smimg" /><br/>
             <p class="text-leader sz2">Secured by TON VM</p>
@@ -76,6 +76,34 @@
             <p class="text-leader2">Lots of configurable parameters and tweakable logic of the contract allows to use
                 it in many different scenarios, from escrow to crowdfundings.</p>
         </div>
+    </div>
+    <hr class="bg-darkCobalt"/>
+    <div class="py-10 px-0 px-5-sm px-10-md px-20-lg text-leader wtxsh">
+        <ul class="custom-list-marker">
+            <li data-marker="➤">It is possible to set many different conditions for the fund transfer:</li>
+            <li data-marker="★" class="mt-5">Number of collected grams can be set as a condition:</li>
+            <li data-marker="→">Minimum required collected Grams that are needed to release the funds</li>
+            <li data-marker="→">Maximum permitted collected Grams that can be collected by contract overall</li>
+            <li data-marker="→">Minimum accepted amount per each transaction to prevent various attacks</li>
+            <li data-marker="★" class="mt-5">Important time constraints may (and should) be set:</li>
+            <li data-marker="→">Collection deadline by which minimum required collected Grams must be collected</li>
+            <li data-marker="→">Release locktime by which it is not possible to act upon collected Grams</li>
+            <li data-marker="→">Release deadline after which Grams are automatically released or refunded</li>
+            <li data-marker="★" class="mt-5">Various modes that provide flexibility to the contract operation:</li>
+            <li data-marker="→">Automatic release or refund when release deadline occurs</li>
+            <li data-marker="→">Continuous collection mode that allows to collect more grams after deadline</li>
+            <li data-marker="★" class="mt-5">Different levels of control over the conditions:</li>
+            <li data-marker="→">Automatic mode works without any control and relies only on preset conditions</li>
+            <li data-marker="→">Controlled mode depends upon actions of an external user or smart contract</li>
+            <li data-marker="★" class="mt-5">Splitting between destinations can be prescribed in the contract:</li>
+            <li data-marker="→">Percentage of total collected sum can be sent</li>
+            <li data-marker="→">Some fixed Gram amount can be distributed</li>
+            <li data-marker="→">Ultimate beneficiary will receive all remaining Gram</li>
+            <li data-marker="➤" class="mt-10">Contract operation is very easy for all parties:</li>
+            <li data-marker="★" class="mt-2">Controller can use simple scripts to generate required messages</li>
+            <li data-marker="★" class="mt-2">Investors do not need to use any scripts at all even to return funds</li>
+            <li data-marker="→">If refund phase is ongoing any simple message would reclaim invested funds</li>
+        </ul>
     </div>
 </div>
 <div class="parallax-window" data-parallax="scroll" data-image-src="img/bgct.png">
