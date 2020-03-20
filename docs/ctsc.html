@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="metro4:jquery" content="true">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#3b5c9f">
+    <meta name="msapplication-TileColor" content="#3b5c9f">
+    <meta name="theme-color" content="#3b5c9f">
+
+    <title>Conditional transfer SC (TON)</title>
+    <link rel="stylesheet" href="lib/m4/metro-all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div data-role="appbar" data-expand-point="md" class="ctsc_header fg-white">
+    <a href="#top" class="brand fg-white btxsh">
+        <img src="img/ictgblue.png" style="max-height: 100%" class="pr-3" alt="Spaceship icon" />
+        <span class="h5">
+            <b>Conditional transfer</b>&nbsp;<span class="">SC</span>
+        </span>
+    </a>
+    <ul class="app-bar-menu btxsh">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#applications">Applications</a></li>
+        <li><a href="#howitworks">How it works</a></li>
+        <li><a href="#moreinfo">More information</a></li>
+        <li><a href="dspsc.html" class="fg-darkIndigo-hover wtxsh"><b>DSP</b> SC</a></li>
+    </ul>
+</div>
+<a id="top"></a>
+<div class="parallax-window h-vh-75" data-parallax="scroll" data-image-src="img/geoblue.png">
+    <div class="h-100 pt-10 pt-0-sm">
+        <table class="w-100 h-100 text-center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="vertical-align: middle" class="fg-white btxsh">
+                    <div class="display1 fg-white">Conditional transfer <span class="text-light">smart contract</span></div>
+                    <div class="pl-20 pr-20">
+                        A decentralized finanical smart contract that collects Grams and releases them when a specific
+                        condition is met.<br/>Can be used for escrow, crowdfundings, custody, splitting, etc.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-20" style='vertical-align: middle; background: url("./img/ctsc_logo.png") center no-repeat; background-size: contain;'>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div style='background: url("img/white1.jpg"); background-size: cover'> <!-- class="parallax-window" data-parallax="scroll" data-image-src="img/white1.jpg" -->
+    <a id="features"></a>
+    <div class="display3 my-0 pt-10 text-center fg-black wtxsh">Features</div>
+    <div class="row px-5 text-center">
+        <div class="cell-sm-4 py-15">
+            <img src="img/assets/decsec2.png" alt="Decentralized security" class="smimg" /><br/>
+            <p class="text-leader sz2">Secured by TON VM</p>
+            <p class="text-leader2">Smart contract logic is protected by decentralized virtual machine of TON,
+                conditions are guaranteed to be immutable and enforced no matter what happens.</p>
+        </div>
+        <div class="cell-sm-4 py-15">
+            <img src="img/assets/glassmachine.png" alt="Transparency machine" class="smimg" /><br/>
+            <p class="text-leader sz2">Fully transparent</p>
+            <p class="text-leader2">All information about conditions, beneficiaries, investors and distribution logic
+                is contained in contract data and is easily obtainable and verificable.</p>
+        </div>
+        <div class="cell-sm-4 py-15">
+            <img src="img/assets/flexible.png" alt="Flexibility" class="smimg" /><br/>
+            <p class="text-leader sz2">Immensely flexible</p>
+            <p class="text-leader2">Lots of configurable parameters and tweakable logic of the contract allows to use
+                it in many different scenarios, from escrow to crowdfundings.</p>
+        </div>
+    </div>
+</div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/bgct.png">
+    <a id="applications"></a>
+    <div class="display3 my-0 pt-10 text-center fg-white btxsh">Applications <small>(some examples)</small></div>
+    <div class="grid px-5 text-center fg-lightGray btxsh">
+        <div class="row">
+            <div class="cell-sm-6 py-15">
+                <img src="img/assets/escrow.png" alt="Escrow schematic" class="smimg" /><br/>
+                <p class="text-leader sz2 fg-white">Escrow</p>
+                <p class="text-leader2">It is possible to temporarily safely lock funds into the contract and release
+                    them to destination if some preset agreements are met.</p>
+            </div>
+            <div class="cell-sm-6 py-15">
+                <img src="img/assets/custody.png" alt="Custody schematic" class="smimg" /><br/>
+                <p class="text-leader sz2 fg-white">Custody</p>
+                <p class="text-leader2">Grams can be safely transferred to destination only when it is ready to accept
+                    them, or return them back otherwise.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell-sm-6 py-15">
+                <img src="img/assets/autocrf.png" alt="Auto crowdfunding schematic" class="smimg" /><br/>
+                <p class="text-leader sz2 fg-white">Automatic crowdfunding</p>
+                <p class="text-leader2">The contract may collect Grams from investors and automatically send them to
+                    destination if collection target is met by set time.</p>
+            </div>
+            <div class="cell-sm-6 py-15">
+                <img src="img/assets/ctrlcrf.png" alt="Ctrl crowdfunding schematic" class="smimg" /><br/>
+                <p class="text-leader sz2 fg-white">Controlled crowdfunding</p>
+                <p class="text-leader2">This contract would allow sending funds to destination only if it is permitted
+                    by some controller - a person or a smart contract.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style='background: url("img/grayhex.jpg"); background-size: cover'> <!-- class="parallax-window px-0 px-10-md" data-parallax="scroll" data-image-src="img/grayhex.jpg" -->
+    <a id="howitworks"></a>
+    <div class="display3 my-0 py-10 text-center fg-darkCobalt wtxsh">How it works</div>
+    <div class="ytcontainer">
+        <iframe src="https://www.youtube.com/embed/bUYS8PS8Vqk" frameborder="0" class="ytvideo"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="display3 my-0 py-10 text-center fg-black">&nbsp;</div>
+</div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/aboutbg.jpg">
+    <a id="moreinfo"></a>
+    <div class="display3 my-0 pt-10 text-center fg-white btxsh">More information</div>
+    <div class="grid px-5 text-center fg-lightGray btxsh">
+        <div class="row">
+            <div class="cell-sm-4 py-15">
+                <img src="img/assets/ctsc_itself.png" alt="Contract" class="smimg w-50" /><br/>
+                <p class="text-leader sz2 fg-white">Contract</p>
+                <p class="text-leader2">Quick start guide on how to use the contract
+                    <a href="https://github.com/Skydev0h/ton-freestyle/blob/master/doc/Quick.md#conditional-transfer-sc" class="fg-blue">can be found here</a>.
+                    You can read some technical details about the contract
+                    <a href="https://github.com/Skydev0h/ton-freestyle/blob/master/doc/Technical1.md" class="fg-blue">on the dedicated page</a>.
+                    The code is published in <a href="https://github.com/Skydev0h/ton-freestyle" class="fg-blue">this GitHub repository.</a></p>
+            </div>
+            <div class="cell-sm-4 py-15">
+                <img src="img/assets/progr.png" alt="Author" class="smimg w-50" /><br/>
+                <p class="text-leader sz2 fg-white">Author</p>
+                <p class="text-leader2">You can find author on <a href="https://github.com/Skydev0h" class="fg-blue">GitHub (Skydev0h)</a>
+                    or contact on Telegram by handle @Skydev.</p>
+            </div>
+            <div class="cell-sm-4 py-15">
+                <img src="img/assets/dspsc_itself.png" alt="Another contract" class="smimg w-50" /><br/>
+                <p class="text-leader sz2 fg-white">DSP SC</p>
+                <p class="text-leader2">Please have a look at another smart contract made by the author for this contest:
+                    <a href="dspsc.html" class="fg-lightViolet">Data storage proxy smart contract</a>, an infrastructural SC.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="bg-darkGray"/>
+    <div style="text-wrap: none" class="fg-gray text-center">
+<br/><pre>/------------------------------------------------------------------------\
+| Created for: Telegram (Open Network) Blockchain Contest #2 (Part #2)   |
+| Author: @Skydev (Telegram) / Skydev0h (GitHub)                         |
+>------------------------------------------------------------------------<
+| March 2020, second half                                                |
+\------------------------------------------------------------------------/</pre>
+        <br/>
+    </div>
+</div>
+<!-------------------------------- Scripts -------------------------------->
+<script src="lib/jquery-3.4.1.min.js"></script>
+<script src="lib/m4/metro.min.js"></script>
+<!-- <script src="lib/parallax.min.js"></script> -->
+<script src="lib/jquery.smooth-scroll.min.js"></script>
+<script src="lib/parallax.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

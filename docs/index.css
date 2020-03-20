@@ -1,0 +1,67 @@
+.central_panel {
+    position: absolute; top: 50%; left: 0;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 100%;
+    padding: 20px 40px;
+    background: rgba(0,0,0,0.5); color: white;
+    margin-top: -5px; text-align: center;
+}
+.ctsc_panel .bg {
+    background: url("./img/sc1.jpg") #2e2f7c;
+}
+.dspsc_panel .bg {
+    background: url("./img/sc2.jpg") #4b1d83;
+}
+.ctsc_panel .bg, .dspsc_panel .bg,
+.ctsc_panel .fg, .dspsc_panel .fg {
+    position: absolute; width: 100%; height: 100%;
+    text-align: center; color: white;
+}
+.ctsc_panel .bg, .dspsc_panel .bg {
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(5px) brightness(65%) grayscale(50%);
+    filter: blur(5px) brightness(65%) grayscale(50%);
+    -moz-transition: 0.5s; transition: 0.5s;
+}
+.ctsc_panel:hover .bg, .dspsc_panel:hover .bg {
+    -webkit-filter: blur(2px) brightness(85%) grayscale(0%);
+    filter: blur(2px) brightness(85%) grayscale(0%);
+}
+.ctsc_panel:active .bg, .dspsc_panel:active .bg {
+    -webkit-filter: blur(0px) brightness(100%) grayscale(0%);
+    filter: blur(0px) brightness(100%) grayscale(0%);
+}
+.sct {
+    width: 20rem; margin-left: auto; margin-right: auto;
+    background: rgba(0, 0, 0, 0.3); border-radius: 10px; padding: 1rem 1rem 1rem 1rem;
+    -moz-transition: 0.5s; transition: 0.5s;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+.sct h2 { text-shadow: 0 0 4px #000000 !important; }
+.ctsc_panel:hover .sct, .dspsc_panel:hover .sct {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+}
+.ctsc_panel:active .sct, .dspsc_panel:active .sct {
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.7);
+}
+.scdesc { padding-bottom: 1rem; }
+.sct a { margin-bottom: 1rem; }
